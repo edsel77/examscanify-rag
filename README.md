@@ -50,6 +50,19 @@
 | **Observability**       | [LangSmith](https://smith.langchain.com)                              | Optional, free tier       |
 | **Deployment**          | [Render](https://render.com)                                          | Via `render.yaml`         |
 
+### 🤖 Corrective RAG Pipeline
+
+The **ExamScanify AI** chatbot is powered by a Corrective Retrieval-Augmented Generation (CRAG) system. Here's how each component fits together:
+
+| Component           | Technology                                                               | Role                                                                 |
+| ------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| **RAG Orchestration**| [LangGraph](https://langchain-ai.github.io/langgraph/)                  | State machine that retrieves, grades, and rewrites queries before answering |
+| **Embedding Model** | [Google Gemini](https://aistudio.google.com) — `gemini-embedding-001`   | Converts knowledge chunks into 768-dim dense vectors                 |
+| **Vector Index**    | [Supabase](https://supabase.com) pgvector                               | Performs similarity search (`match_examscanify_docs` RPC) to retrieve relevant chunks |
+| **Primary LLM**     | [Groq](https://groq.com) — `llama-3.1-8b-instant`                       | Generates fast responses and acts as a judge to grade document relevance |
+| **Memory**          | [Upstash Redis](https://upstash.com)                                    | Stores short-lived conversation history (1-hour TTL) for multi-turn chats |
+| **API Framework**   | [FastAPI](https://fastapi.tiangolo.com/) + Uvicorn                      | Exposes the `/chat` streaming SSE endpoint and handles rate limiting |
+
 ---
 
 ## 🧠 How It Works
