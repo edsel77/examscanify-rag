@@ -1,6 +1,7 @@
 fastapi==0.116.1
 uvicorn[standard]==0.32.0
 langchain==0.3.25
+langchain-groq
 langchain-google-genai==2.1.5
 langchain-community==0.3.24
 langgraph==0.2.74
