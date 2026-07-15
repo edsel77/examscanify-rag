@@ -61,7 +61,8 @@ _generate_prompt = ChatPromptTemplate.from_messages(
     [
         ("system", _SYSTEM_PROMPT),
         ("placeholder", "{history}"),
-        ("human", "{question}\n\nIMPORTANT: You MUST answer in the EXACT SAME LANGUAGE as my question above. If I asked in English, answer ONLY in English. If I asked in Filipino, answer ONLY in Filipino."),
+        ("system", "CRITICAL LANGUAGE RULE: Detect the language of the user's CURRENT question (the very next message) and respond EXCLUSIVELY in that language. Do NOT be influenced by the language of previous messages in the chat history above. English question = English answer. Filipino question = Filipino answer."),
+        ("human", "{question}"),
     ]
 )
 _generate_chain = _generate_prompt | llm | StrOutputParser()
