@@ -1,6 +1,6 @@
 """
 ExamScanify Knowledge Base
-~70 curated chunks across 4 categories:
+~80+ curated chunks across 4 categories:
   - landing      : public landing page content
   - mobile-app   : Android app internals
   - backend      : API & cloud infrastructure
@@ -15,436 +15,746 @@ KNOWLEDGE_CHUNKS = [
         "content": (
             "ExamScanify is the #1 ZipGrade alternative for DepEd teachers in the Philippines. "
             "It provides fast, accurate MDAT exam scanning and automated grading with zero monthly scan limits. "
-            "Teachers can grade unlimited exams for free or unlock the Premium Pass for a low annual fee. "
-            "It is designed specifically for the Philippine educational system and DepEd curriculums."
+            "Teachers can grade unlimited exams for free or unlock the Premium Pass for a low annual fee of ₱299/year. "
+            "It is designed specifically for the Philippine educational system and DepEd curriculums. "
+            "The app is available on Android via Google Play (package: com.driftapps.scanify). "
+            "The developer is Drift Apps. The official website is https://examscanify.com."
         ),
         "metadata": {"category": "landing", "title": "ExamScanify Overview"},
     },
     {
         "content": (
-            "ExamScanify's Unified Smart Detection means one scanner handles all your exams automatically. "
-            "The app identifies the exam type and the student from dedicated codes printed on the answer sheet — "
-            "no manual sorting, no need to select the correct exam before scanning. "
-            "You can scan a whole stack of different exams in one session without changing any settings."
+            "ExamScanify's hero tagline is 'Smart Mobile Exam Scanning.' "
+            "It is powered by OpenCV technology for computer vision-based bubble sheet detection. "
+            "Key highlights shown on the landing page: Unlimited Scanning, AI Exam Generation, Secured Cloud Storage. "
+            "Two primary CTAs are available: Download App (links to Google Play) and Web Console (links to console.examscanify.com). "
+            "The app scans and grades unlimited exams directly from a mobile phone. "
+            "It auto-detects exam and student data instantly from printed sheet codes. "
+            "Results can be exported to Excel in one tap."
         ),
-        "metadata": {"category": "landing", "title": "Unified Smart Detection"},
+        "metadata": {"category": "landing", "title": "Hero Section & Value Proposition"},
     },
     {
         "content": (
-            "ExamScanify securely syncs student names, codes, scores, and exam data to an encrypted cloud infrastructure. "
-            "This allows teachers to access their data from any device or from the ExamScanify Web Console at console.examscanify.com. "
-            "Data is protected with industry-standard encryption."
+            "ExamScanify key performance stats shown on the landing page: "
+            "99.9% accuracy rate for bubble detection; "
+            "less than 1 second scan time per sheet; "
+            "real-time cloud processing for instant results; "
+            "Premium Pass priced at ₱299 per year (~$5 USD at 0.017 exchange rate)."
         ),
-        "metadata": {"category": "landing", "title": "Secured Cloud Storage"},
+        "metadata": {"category": "landing", "title": "Key Stats & Performance Metrics"},
     },
     {
         "content": (
-            "ExamScanify provides detailed per-question analytics through its Item Analysis feature. "
-            "Teachers can view answer distribution for each question — seeing exactly which choices students selected — "
-            "and identify which questions students found most challenging. "
-            "This helps educators improve future exams and teaching strategies."
+            "ExamScanify Pricing — Free Plan (named 'Free Forever', costs ₱0): "
+            "No monthly scanning limits; "
+            "AI MDAT Exam Generation included; "
+            "Unified Smart Auto-Detection included; "
+            "Item Analysis & Data Exports included; "
+            "Web console access included; "
+            "Contains ads (free users see rewarded ads to unlock extra scan sessions). "
+            "The free plan is described as 'Essential tools for every teacher.'"
         ),
-        "metadata": {"category": "landing", "title": "Item Analysis Feature"},
+        "metadata": {"category": "landing", "title": "Pricing: Free Plan"},
     },
     {
         "content": (
-            "ExamScanify's Class Management feature lets teachers organize students by class or section. "
-            "Teachers can track student progress over time, manage multiple sections, "
-            "and view per-class analytics. This makes it easy to compare performance across different groups."
+            "ExamScanify Pricing — Premium Pass (annual plan, ₱299/year, ~$5 USD/year): "
+            "No advertisements — completely ad-free experience; "
+            "Realtime web console sync — cloud data always up to date; "
+            "Supports development of ExamScanify; "
+            "Badge label: '⚡ Power Up'; "
+            "Billed annually, cancel anytime before renewal. "
+            "Described as 'Full premium access for a year' and 'Ultimate value for teachers.' "
+            "Purchase is a one-time annual payment, not auto-renewing subscription."
         ),
-        "metadata": {"category": "landing", "title": "Class Management"},
+        "metadata": {"category": "landing", "title": "Pricing: Premium Pass"},
     },
     {
         "content": (
-            "ExamScanify can generate professional Excel (.xlsx) export files containing student scores, "
-            "percentages, rankings, and analytics for any exam. "
-            "Teachers can share the file via email, save it to cloud storage (Google Drive, OneDrive), "
-            "or transfer it to a computer. To export, open an exam and tap the Share icon."
+            "ExamScanify Feature: Unified Smart Detection. "
+            "One scanner handles all exam types simultaneously. "
+            "The app automatically identifies which exam is being graded and which student it belongs to "
+            "from dedicated codes embedded in each printed answer sheet. "
+            "No manual sorting, folder switching, or settings changes required. "
+            "Teachers can scan a mixed stack of answer sheets from different exams in a single pass."
         ),
-        "metadata": {"category": "landing", "title": "Excel Export"},
+        "metadata": {"category": "landing", "title": "Feature: Unified Smart Detection"},
     },
     {
         "content": (
-            "ExamScanify is designed to handle all core scanning and grading tasks on-device. "
-            "Teachers can manage student records, view analytics, and grade exams locally without internet. "
-            "When connectivity is available, data syncs to the cloud automatically. "
-            "This offline-first design ensures the app works reliably in areas with poor connectivity."
+            "ExamScanify Feature: Secured Cloud Storage. "
+            "All student names, codes, and exam scores are securely synced to an encrypted cloud infrastructure. "
+            "Data is accessible from any device or from the web console at console.examscanify.com. "
+            "Industry-standard encryption protects all cloud-stored data. "
+            "Free users get cloud sync access; Premium users get realtime sync."
         ),
-        "metadata": {"category": "landing", "title": "Offline Usage"},
+        "metadata": {"category": "landing", "title": "Feature: Secured Cloud Storage"},
     },
     {
         "content": (
-            "The AI Exam Generator in ExamScanify lets teachers instantly create high-quality exam questions. "
-            "Specify your subject and topic, and the AI automatically generates questions, answer choices, "
-            "and populates the answer key in seconds. "
-            "The generator supports MDAT (Multidimensional Assessment Tool) format and Classic (HOTS) format. "
-            "It is powered by Gemini AI and supports all major DepEd subjects."
+            "ExamScanify Feature: Item Analysis. "
+            "Provides detailed per-question analytics showing the distribution of student answers. "
+            "Identifies which questions students found most challenging. "
+            "Includes distractor analysis: shows which wrong answers students chose most frequently, "
+            "helping teachers identify specific misconceptions in the class."
         ),
-        "metadata": {"category": "landing", "title": "AI Exam Generator Feature"},
+        "metadata": {"category": "landing", "title": "Feature: Item Analysis & Analytics"},
     },
     {
         "content": (
-            "ExamScanify pricing: The Free tier is completely free forever with unlimited scanning. "
-            "Free users can unlock additional scanning sessions by completing a brief interaction when prompted. "
-            "The Premium Pass costs ₱299 per year (approximately $5 USD) and provides completely uninterrupted, "
-            "seamless scanning experience with priority access to all features including the AI Exam Generator. "
-            "There are no monthly fees — only a single annual payment."
+            "ExamScanify Feature: Class Management. "
+            "Teachers can organize students by class section. "
+            "Track student progress over time across multiple exams. "
+            "Manage multiple class sections effortlessly. "
+            "Each class has a section name and grade level. "
+            "Students are enrolled per class with unique student codes used for auto-detection during scanning."
         ),
-        "metadata": {"category": "landing", "title": "Pricing — Free and Premium"},
+        "metadata": {"category": "landing", "title": "Feature: Class Management"},
     },
     {
         "content": (
-            "Spark Credits are the in-app currency used for AI Exam Generation in ExamScanify. "
-            "Each AI exam generation costs Spark Credits based on: a base cost of 5 credits, "
-            "plus 0.55 credits per exam item (rounded up), plus a surcharge for longer topic content. "
-            "Credits are deducted before generation and refunded automatically if generation fails. "
-            "Premium Pass users receive more credits than Free users."
+            "ExamScanify Feature: Excel Export. "
+            "Generate professional Excel reports from any exam result. "
+            "Reports include student scores, percentages, and analytics. "
+            "Can be shared via email or saved to cloud storage. "
+            "To export: open any exam and tap the Share icon; ExamScanify generates the Excel file automatically."
         ),
-        "metadata": {"category": "landing", "title": "Spark Credits System"},
+        "metadata": {"category": "landing", "title": "Feature: Excel Export"},
     },
     {
         "content": (
-            "FAQ: How does scanning work? "
-            "ExamScanify uses OpenCV technology to detect 6 black square markers on the answer sheet corners and edges. "
-            "Once all 6 markers are detected (shown as green indicators on screen), "
-            "the app automatically captures the image. "
-            "It then detects which bubbles are shaded and calculates scores in real-time using the stored answer key."
+            "ExamScanify Feature: Real-time Cloud Processing. "
+            "Advanced cloud infrastructure enables lightning-fast scanning and real-time data processing. "
+            "Scan results are processed and saved instantly after each sheet is captured. "
+            "Cloud sync keeps data consistent across the mobile app and web console."
         ),
-        "metadata": {"category": "landing", "title": "FAQ — How Scanning Works"},
+        "metadata": {"category": "landing", "title": "Feature: Real-time Cloud Processing"},
     },
     {
         "content": (
-            "FAQ: What is the difference between Classic mode and MDAT mode? "
-            "Classic mode uses binary right/wrong scoring where each correct answer gets 1 point. "
-            "MDAT (Multidimensional Assessment Tool) mode allows different point values per answer choice "
-            "(A=3 points, B=2 points, C=1 point, D=0 points), enabling partial credit and nuanced assessment. "
-            "MDAT is the DepEd-recommended format for Philippine schools."
+            "ExamScanify AI Exam Generation — Featured Innovation. "
+            "The AI Exam Generator automatically creates high-quality MDAT exams tailored to the teacher's subject and topic. "
+            "Features: Instant MDAT question generation; Automatic answer key population; Perfect for DepEd curriculums. "
+            "Stop spending hours writing questions — AI handles question creation, choice generation, and answer key in seconds. "
+            "Available as the 'Creator' tab in the mobile app. "
+            "Uses Gemini AI on the backend."
         ),
-        "metadata": {"category": "landing", "title": "FAQ — MDAT vs Classic Mode"},
+        "metadata": {"category": "landing", "title": "Feature: AI-Powered Exam Generation"},
     },
     {
         "content": (
-            "FAQ: Is student data safe in ExamScanify? "
+            "ExamScanify Analytics section highlights two capabilities: "
+            "1. Performance Benchmarking — compare exam results across multiple classes and exam versions effortlessly. "
+            "2. Distractor Analysis — see which wrong answers students are choosing to identify specific misconceptions. "
+            "Analytics screenshots show: Performance Insights screen, Item Analysis screen, and Class Comparison screen in the mobile app."
+        ),
+        "metadata": {"category": "landing", "title": "Analytics: Performance & Distractor Analysis"},
+    },
+    {
+        "content": (
+            "ExamScanify Printable Outputs — Answer Sheets. "
+            "The app generates personalized answer sheets for every student in a class. "
+            "Each sheet is pre-printed with the student's name, class code, and unique student ID. "
+            "Layout: 6 students per page to save paper; includes ExamScanify watermark for authenticity. "
+            "The sheet's embedded code is automatically read by the scanner during grading — no manual selection needed. "
+            "Teachers print these sheets and distribute them before the exam."
+        ),
+        "metadata": {"category": "landing", "title": "Printable Output: Answer Sheets"},
+    },
+    {
+        "content": (
+            "ExamScanify Printable Outputs — AI-Generated Question Papers. "
+            "The AI Exam Generator produces complete, DepEd-aligned MDAT question papers ready for printing. "
+            "Each document includes: full scenario-based MDAT questions; point-based Key to Correction table with values per answer choice. "
+            "Exported as .docx format, editable in Microsoft Word. "
+            "Tailored to DepEd subject competencies. "
+            "No manual formatting required — the AI handles the full document layout."
+        ),
+        "metadata": {"category": "landing", "title": "Printable Output: AI Question Papers (.docx)"},
+    },
+    {
+        "content": (
+            "How ExamScanify Works — Step 1: Create Your Exam. "
+            "Teachers create exams manually using Classic mode (right/wrong scoring) or MDAT mode (rubric-based point weights per answer choice). "
+            "Alternatively, use the AI Exam Generator to instantly create MDAT questions tailored for DepEd subjects. "
+            "Exams support 1 to 60 items. Item counts available in AI generator: 10, 20, 30, 40, 50."
+        ),
+        "metadata": {"category": "landing", "title": "How It Works: Step 1 — Create Exam"},
+    },
+    {
+        "content": (
+            "How ExamScanify Works — Step 2: One Scanner Fits All. "
+            "No need to switch folders or settings between different exams. "
+            "Use a single scanner for all exams simultaneously. "
+            "The app automatically detects the student's identity and the exam type from codes printed on the answer sheet. "
+            "Scan a mixed stack of sheets from different classes and exams in one continuous session."
+        ),
+        "metadata": {"category": "landing", "title": "How It Works: Step 2 — Unified Scanner"},
+    },
+    {
+        "content": (
+            "How ExamScanify Works — Step 3: Analyze & Export. "
+            "After scanning, view detailed analytics and student performance trends. "
+            "Export results to Excel for reporting. "
+            "Access all recorded grades and analytics on desktop via console.examscanify.com. "
+            "Web console provides: Classes & Students view, Exam Scores, Overall Summary, Performance by Class, Item Analysis, and Answer Sheet downloads."
+        ),
+        "metadata": {"category": "landing", "title": "How It Works: Step 3 — Analyze & Export"},
+    },
+    {
+        "content": (
+            "ExamScanify FAQ: How does scanning work? "
+            "The app uses OpenCV technology to detect 6 black corner markers on the answer sheet. "
+            "Green indicators confirm all 6 markers are found. "
+            "Once aligned, the app automatically captures and processes the image. "
+            "It detects shaded bubbles and calculates the score in real-time based on the exam's stored answer key."
+        ),
+        "metadata": {"category": "landing", "title": "FAQ: How Scanning Works"},
+    },
+    {
+        "content": (
+            "ExamScanify FAQ: How does the AI Exam Generator work? "
+            "The teacher specifies a subject and topic. "
+            "The AI automatically generates MDAT multiple-choice questions, answer choices, and fully populates the answer key in seconds. "
+            "Outputs include a printable .docx question paper and a Key to Correction. "
+            "The generator supports both MDAT (rubric-based) and Classic HOTS (single correct answer) formats."
+        ),
+        "metadata": {"category": "landing", "title": "FAQ: AI Exam Generator"},
+    },
+    {
+        "content": (
+            "ExamScanify FAQ: Is student data safe? "
             "Yes. All student names, codes, and scores are securely synced to an encrypted cloud infrastructure. "
-            "The app uses industry-standard encryption for all data in transit and at rest. "
-            "Data is safely backed up and accessible only by the teacher who owns it."
+            "Data is protected by industry-standard encryption and accessible from any device or the web console. "
+            "Student data is stored in Supabase with row-level security."
         ),
-        "metadata": {"category": "landing", "title": "FAQ — Data Safety"},
+        "metadata": {"category": "landing", "title": "FAQ: Data Safety & Security"},
     },
     {
         "content": (
-            "FAQ: Do I need to select the exam before scanning? "
-            "No. Unlike competitors that use generic answer sheets, ExamScanify uses dedicated sheets "
-            "with built-in exam codes and student codes. "
-            "The unified scanner automatically identifies which exam and which student each sheet belongs to. "
-            "You can scan a mixed stack of different exams without changing any settings."
+            "ExamScanify FAQ: Can the app be used offline? "
+            "ExamScanify handles all core scanning and grading tasks on-device — no internet needed during a scan session. "
+            "Student records and analytics can be managed locally. "
+            "Cloud sync and AI generation require an internet connection."
         ),
-        "metadata": {"category": "landing", "title": "FAQ — No Pre-selection Needed"},
+        "metadata": {"category": "landing", "title": "FAQ: Offline Use"},
     },
     {
         "content": (
-            "FAQ: Is scanning really unlimited in ExamScanify? "
-            "Yes. All users — Free and Premium — can scan unlimited answer sheets. "
-            "Free users may occasionally need to complete a brief interaction (e.g., watch a short ad) to unlock more sessions. "
-            "Premium Pass users ($5/year, ₱299) have a completely seamless, uninterrupted experience with no interruptions."
+            "ExamScanify FAQ: What is the difference between Classic and MDAT modes? "
+            "Classic mode: Traditional right/wrong scoring — each correct answer gets exactly 1 point. "
+            "MDAT (Modified Difficulty-Adjusted Test) mode: Each answer choice has a different point value. "
+            "MDAT allows partial credit and more nuanced assessment of student understanding. "
+            "MDAT is the standard used in DepEd assessments."
         ),
-        "metadata": {"category": "landing", "title": "FAQ — Unlimited Scanning"},
+        "metadata": {"category": "landing", "title": "FAQ: Classic vs MDAT Modes"},
     },
     {
         "content": (
-            "ExamScanify How It Works: Step 1 — Create your exam in the app (or use AI generation). "
-            "Step 2 — Print the MDAT answer sheets. Each sheet has unique codes for the exam and student. "
-            "Step 3 — Students take the exam and shade their answers. "
-            "Step 4 — Teacher scans each sheet using the ExamScanify camera. "
-            "Step 5 — Scores are instantly calculated and saved. Analytics are available immediately."
+            "ExamScanify FAQ: How do I export results? "
+            "Open any exam in the app and tap the Share icon. "
+            "ExamScanify generates a professional Excel file containing student scores, percentages, and analytics. "
+            "The file can be shared via email, saved to cloud storage, or transferred to a computer."
         ),
-        "metadata": {"category": "landing", "title": "How It Works"},
+        "metadata": {"category": "landing", "title": "FAQ: Exporting Results to Excel"},
     },
     {
         "content": (
-            "ExamScanify is available as a free download on the Google Play Store. "
-            "Search for 'ExamScanify' or find it at: "
-            "https://play.google.com/store/apps/details?id=com.driftapps.scanify "
-            "The app is developed by Drift Apps, a Philippine-based mobile app studio."
+            "ExamScanify FAQ: Do I need to select the exam before scanning? "
+            "No. Unlike competitors that use generic answer sheets, ExamScanify uses dedicated sheets with built-in exam and student codes. "
+            "The unified scanner automatically identifies which exam is being graded and which student it belongs to. "
+            "Teachers can scan a mixed stack of different exams in one go without changing any settings."
         ),
-        "metadata": {"category": "landing", "title": "Download and Availability"},
+        "metadata": {"category": "landing", "title": "FAQ: No Manual Exam Selection Needed"},
     },
     {
         "content": (
-            "ExamScanify supports printable answer sheet outputs. "
-            "Teachers can generate and print MDAT-format answer sheets directly from the app. "
-            "Each sheet includes: the exam code, student code, bubble grid, and the 6 black detection markers "
-            "required for the OpenCV scanning algorithm."
+            "ExamScanify FAQ: Is scanning really unlimited? "
+            "Yes. All users — free and premium — can scan unlimited times. "
+            "Free users unlock additional scanning sessions for free by completing a brief rewarded ad interaction when prompted. "
+            "Premium Pass users (₱299/year) enjoy a completely seamless, uninterrupted scanning experience with no ads and no prompts."
         ),
-        "metadata": {"category": "landing", "title": "Printable Answer Sheets"},
-    },
-
-    # ─────────────────────────────────────────────
-    # MOBILE APP INTERNALS
-    # ─────────────────────────────────────────────
-    {
-        "content": (
-            "ExamScanify's scanning technology uses OpenCV computer vision to locate 6 black square fiducial markers "
-            "positioned at the four corners and two midpoints of the answer sheet. "
-            "The markers must all be visible and detected (shown as green squares) before the capture triggers. "
-            "This ensures perspective correction and accurate bubble grid alignment regardless of camera angle."
-        ),
-        "metadata": {"category": "mobile-app", "title": "OpenCV 6-Marker Detection"},
+        "metadata": {"category": "landing", "title": "FAQ: Unlimited Scanning"},
     },
     {
         "content": (
-            "Bubble detection in ExamScanify: After marker detection and perspective transformation, "
-            "the app maps the expected bubble grid positions and measures the fill percentage of each circle. "
-            "A bubble exceeding a configurable fill threshold is marked as shaded. "
-            "The detected shaded bubbles are compared against the stored answer key to compute scores."
+            "ExamScanify Web Console sections (visible at console.examscanify.com): "
+            "1. Classes & Students — manage class sections and enrolled students; "
+            "2. Students List — full roster with student codes; "
+            "3. Exams & Results — list all exams with result summaries; "
+            "4. Exam Scores — per-student score table for each exam; "
+            "5. Overall Summary — aggregated performance data; "
+            "6. Performance by Class — compare results across sections; "
+            "7. Item Analysis — per-question answer distribution; "
+            "8. Download Answer Sheets — generate and download printable sheets."
         ),
-        "metadata": {"category": "mobile-app", "title": "Bubble Detection Algorithm"},
+        "metadata": {"category": "landing", "title": "Web Console Feature Sections"},
     },
     {
         "content": (
-            "MDAT mode scoring in ExamScanify: "
-            "Choice A is always worth 3 points (most correct), "
-            "Choice B is worth 2 points (partially correct), "
-            "Choice C is worth 1 point (minimally correct), "
-            "Choice D is worth 0 points (incorrect). "
-            "This scoring system allows teachers to reward partial understanding "
-            "rather than binary right/wrong grading. "
-            "The correct answer is always placed in Choice A by the AI generator."
-        ),
-        "metadata": {"category": "mobile-app", "title": "MDAT Scoring System"},
-    },
-    {
-        "content": (
-            "Classic (HOTS) mode in ExamScanify uses binary scoring: "
-            "one correct answer (Choice A, marked is_correct=true) worth 1 point, "
-            "three distractors worth 0 points. "
-            "Questions target Higher-Order Thinking Skills (HOTS) aligned with Bloom's Taxonomy: "
-            "Analyzing, Evaluating, and Creating. "
-            "This is DepEd's recommended format for critical thinking assessment."
-        ),
-        "metadata": {"category": "mobile-app", "title": "Classic HOTS Mode"},
-    },
-    {
-        "content": (
-            "ExamScanify's AI Exam Generator supports all major DepEd subjects: "
-            "Filipino, English, Mathematics, Science, AP (Araling Panlipunan), EsP, "
+            "ExamScanify supported subjects for AI Exam Generation: "
+            "Filipino, English, Mathematics, Science, AP (Araling Panlipunan), EsP (Edukasyon sa Pagpapakatao), "
             "Music, Arts, Physical Education, Health, EPP, TLE, "
-            "Oral Communication, Reading and Writing, General Mathematics, "
-            "Statistics and Probability, Earth and Life Science, Physical Science, "
-            "and Senior High School strands: STEM, ABM, HUMSS, TVL."
+            "Oral Communication, Reading and Writing, General Mathematics, Statistics and Probability, "
+            "Earth and Life Science, Physical Science, STEM, ABM, HUMSS, TVL. "
+            "Custom subjects can also be typed in manually."
         ),
-        "metadata": {"category": "mobile-app", "title": "Supported Subjects for AI Generator"},
+        "metadata": {"category": "landing", "title": "AI Exam Generator: Supported Subjects"},
     },
     {
         "content": (
-            "The AI Exam Generator workflow: The teacher selects a subject, enters a topic or pastes reference material, "
-            "and chooses the number of items (10, 20, 30, 40, or 50). "
-            "The app calls the ExamScanify backend API which uses Gemini AI with a structured JSON schema "
-            "to generate either MDAT or Classic exam items in real-time. "
-            "The generated exam with populated answer key is immediately usable."
+            "ExamScanify company and contact information: "
+            "Developer: Drift Apps (https://drift-apps.netlify.app/). "
+            "Support email: support@examscanify.com. "
+            "Admin email: driftvelocity.app@gmail.com. "
+            "Website: https://examscanify.com. "
+            "Web Console: https://console.examscanify.com. "
+            "Google Play: https://play.google.com/store/apps/details?id=com.driftapps.scanify. "
+            "Android package name: com.driftapps.scanify."
         ),
-        "metadata": {"category": "mobile-app", "title": "AI Generator Workflow"},
-    },
-    {
-        "content": (
-            "ExamScanify uses Dexie.js as its client-side database for offline-first storage. "
-            "All exams, students, classes, and scores are stored locally in IndexedDB via Dexie.js. "
-            "When internet is available, data is synced to Supabase cloud storage. "
-            "This architecture ensures the app works fully offline and syncs incrementally (delta sync)."
-        ),
-        "metadata": {"category": "mobile-app", "title": "Dexie.js Offline-First Architecture"},
-    },
-    {
-        "content": (
-            "Student code system in ExamScanify: Each student is assigned a unique numeric code within a class. "
-            "This code is printed on the student's answer sheet as a barcode/number pattern. "
-            "When the sheet is scanned, the app reads this code to automatically assign the score "
-            "to the correct student without any manual selection."
-        ),
-        "metadata": {"category": "mobile-app", "title": "Student Code System"},
-    },
-    {
-        "content": (
-            "Exam code system in ExamScanify: Each exam is assigned a unique identifier that is encoded "
-            "into the answer sheet design. When scanning, the app reads this code to know which answer key "
-            "to apply, which subject the exam belongs to, and which class the student is in. "
-            "This enables the unified scanner to handle mixed stacks of answer sheets."
-        ),
-        "metadata": {"category": "mobile-app", "title": "Exam Code System"},
-    },
-    {
-        "content": (
-            "ExamScanify answer key management: Teachers create an answer key when setting up an exam. "
-            "For MDAT exams, each item specifies the point values (A=3, B=2, C=1, D=0). "
-            "For Classic exams, each item specifies the single correct answer (A). "
-            "Answer keys are stored locally and in the cloud. They can be edited before scanning begins."
-        ),
-        "metadata": {"category": "mobile-app", "title": "Answer Key Management"},
-    },
-    {
-        "content": (
-            "Web sync in ExamScanify: Teachers can sync their data between the mobile app and the web console "
-            "using a 6-character PIN code. "
-            "The teacher uploads a backup file to Cloudinary from the mobile app, receives a PIN, "
-            "and enters that PIN in the web console to download and import the data. "
-            "The PIN expires after 5 minutes for security."
-        ),
-        "metadata": {"category": "mobile-app", "title": "Mobile-to-Web Sync via PIN"},
-    },
-    {
-        "content": (
-            "ExamScanify analytics features: "
-            "Per-exam: total scores, average, highest, lowest, pass rate, score distribution histogram. "
-            "Per-question: answer distribution (how many chose A, B, C, D), difficulty index, discrimination index. "
-            "Per-student: exam history, score trends across multiple exams. "
-            "Per-class: class average, top performers, at-risk students."
-        ),
-        "metadata": {"category": "mobile-app", "title": "Analytics Features"},
-    },
-    {
-        "content": (
-            "ExamScanify requires an Android device to run. "
-            "The app is built with React Native (Expo framework) targeting Android. "
-            "Minimum Android version: Android 6.0 (API level 23). "
-            "A working camera is required for scanning. "
-            "The app package name is: com.driftapps.scanify"
-        ),
-        "metadata": {"category": "mobile-app", "title": "App Requirements"},
-    },
-    {
-        "content": (
-            "The ExamScanify mobile app is built with React Native using the Expo framework. "
-            "Key mobile libraries: Expo Camera for scanning, Dexie.js for local storage, "
-            "React Navigation for routing. "
-            "The app communicates with the ExamScanify backend API at api.examscanify.com "
-            "using Firebase Bearer token authentication."
-        ),
-        "metadata": {"category": "mobile-app", "title": "Mobile App Technology Stack"},
+        "metadata": {"category": "landing", "title": "Company & Contact Information"},
     },
 
     # ─────────────────────────────────────────────
-    # BACKEND / API
+    # MOBILE APP
     # ─────────────────────────────────────────────
     {
         "content": (
-            "ExamScanify backend is built with Express 5 and TypeScript, deployed as serverless functions on Vercel. "
-            "The backend API is accessible at https://api.examscanify.com. "
-            "It handles: exam generation (Gemini AI), user authentication (Firebase), "
-            "data storage (Supabase), file storage (Cloudinary), email (Resend), "
-            "and Google Play purchase verification."
+            "ExamScanify Android app has 5 main tabs: "
+            "1. Scanner — real-time camera scanning using OpenCV via a Vue.js WebView; "
+            "2. Classes — manage class sections and students; "
+            "3. Exams — create, edit, view, and delete exams; "
+            "4. Creator (AI Exam Generator) — generate AI-powered MDAT or Classic exams; "
+            "5. Account — membership status, data management, support, and auth settings."
         ),
-        "metadata": {"category": "backend", "title": "Backend Architecture"},
+        "metadata": {"category": "mobile-app", "title": "App Tabs Overview"},
     },
     {
         "content": (
-            "ExamScanify backend uses Firebase Admin SDK for authentication. "
-            "All protected API endpoints require a Firebase Bearer token in the Authorization header. "
-            "The `requireBearerToken` middleware validates the token and extracts the user UID. "
-            "Unauthenticated requests receive a 401 Unauthorized response."
+            "ExamScanify Scanner Tab architecture: "
+            "The scanner runs inside a React Native WebView that loads a compiled Vue.js app from local Android assets. "
+            "Two scanner modes: 'standard' (scanner-form-b route) and 'lite' (scanner route). "
+            "The Vue app communicates with React Native via postMessage (WebView bridge). "
+            "OpenCV runs inside the Vue WebView for real-time marker detection and bubble reading. "
+            "The WebView loads from: file:///android_asset/vue-dist/index.html"
         ),
-        "metadata": {"category": "backend", "title": "Firebase Authentication"},
+        "metadata": {"category": "mobile-app", "title": "Scanner Tab: Architecture"},
     },
     {
         "content": (
-            "Spark Credits in the backend: When a teacher requests AI exam generation, "
-            "the backend calculates the credit cost server-side (base: 5 credits + 0.55 per item + length surcharge). "
-            "It calls `deduct_credits` Supabase RPC atomically before generation. "
-            "If generation fails, `increment_credits` is called to refund the exact amount. "
-            "This prevents double-spending and ensures fairness."
+            "ExamScanify Scanner scan flow: "
+            "1. Camera streams through the Vue WebView. "
+            "2. OpenCV detects 6 black corner markers on the answer sheet (MARKER_DETECTED event). "
+            "3. On full detection, the WebView auto-captures the image and reads shaded bubbles. "
+            "4. SCAN_COMPLETED event is sent to React Native with: studentData, examData, assessmentData, "
+            "correctAnswerCount, totalItems, unshadedNumbers, studentAnswers, capturedImage. "
+            "5. ScanResultModal displays the result with student name, score, percentage, and captured image."
         ),
-        "metadata": {"category": "backend", "title": "Spark Credits — Backend Logic"},
+        "metadata": {"category": "mobile-app", "title": "Scanner: Scan Flow"},
     },
     {
         "content": (
-            "Exam generation API: POST /api/generate-exam "
-            "Body: { message (topic/reference), subject, itemCount (10-50), isFilipino (bool), examType ('mdat'|'classic') } "
-            "The backend uses Google Gemini 2.5 Flash with structured JSON schema output "
-            "(responseSchema) to ensure the AI returns a valid, parseable exam structure. "
-            "Tokens used are logged for cost analysis."
+            "ExamScanify Scanner: Battery Saver feature. "
+            "The camera automatically pauses after 30 seconds of inactivity to save battery. "
+            "A countdown overlay appears during the last 10 seconds (from 20s of inactivity). "
+            "Activity is reset whenever a marker is detected or the user interacts with the scanner. "
+            "The scanner resumes automatically when the user returns to the Scanner tab."
         ),
-        "metadata": {"category": "backend", "title": "Exam Generation API"},
+        "metadata": {"category": "mobile-app", "title": "Scanner: Battery Saver"},
     },
     {
         "content": (
-            "Gemini AI integration in ExamScanify backend: "
-            "Uses the @google/generative-ai SDK with model 'gemini-2.5-flash'. "
-            "MDAT exams use a strict JSON schema enforcing: exam_title, items[], with each item having "
-            "item_no, language, question, tos (knowledge/analysis/application), choices[] with letter and points. "
-            "Classic exams use a schema with tos (analyzing/evaluating/creating) and is_correct boolean."
+            "ExamScanify Scanner: Camera Watchdog. "
+            "A watchdog timer checks for camera heartbeats every 3 seconds. "
+            "If no heartbeat is received for 15 seconds (indicating a freeze), the WebView is restarted. "
+            "The watchdog is suppressed during scanner mode switches to avoid false restarts. "
+            "A keep-alive ping is sent to the WebView every 10 seconds to prevent camera sleep."
         ),
-        "metadata": {"category": "backend", "title": "Gemini AI Schema"},
+        "metadata": {"category": "mobile-app", "title": "Scanner: Watchdog & Keep-Alive"},
     },
     {
         "content": (
-            "Cloudinary is used in ExamScanify backend for temporary file storage during the web sync process. "
-            "When a teacher initiates a web sync from the mobile app, the backup file is uploaded to Cloudinary. "
-            "The backend generates a 6-character alphanumeric PIN and stores the Cloudinary URL in Supabase. "
-            "The file is immediately deleted after the web console downloads it (atomic consume)."
+            "ExamScanify Scanner: Scanning Limit for free users. "
+            "Free users have a daily scan count limit tracked in local storage. "
+            "When the limit is reached, a UsageLimitModal appears. "
+            "Free users can watch a rewarded ad (via Google AdMob) to unlock extra scan time. "
+            "Premium users always have isOverLimit = false — no scanning limit applies. "
+            "Limit status is re-checked every 30 seconds while the scanner is open."
         ),
-        "metadata": {"category": "backend", "title": "Cloudinary File Storage"},
+        "metadata": {"category": "mobile-app", "title": "Scanner: Scanning Limit (Free Users)"},
     },
     {
         "content": (
-            "Supabase is ExamScanify's primary database. "
-            "Key tables: exams (exam data), students (student records), web_sync_pins (temporary sync PINs), "
-            "config (dynamic app configuration), and user credits. "
-            "The backend uses the Supabase service role key for full database access. "
-            "Supabase is also used for pgvector (the RAG knowledge base)."
+            "ExamScanify Scanner: Camera controls. "
+            "Supports torch/flashlight toggle when the device has a flash. "
+            "Supports switching between multiple camera devices (e.g., rear cameras on multi-lens phones). "
+            "When switching cameras, the WebView is fully reloaded for reliability on low-end Android devices. "
+            "The preferred camera ID is stored locally and restored on next session."
         ),
-        "metadata": {"category": "backend", "title": "Supabase Database"},
+        "metadata": {"category": "mobile-app", "title": "Scanner: Camera Controls"},
     },
     {
         "content": (
-            "ExamScanify uses Resend for transactional email sending. "
-            "Email use cases: ambassador invitation emails, account notifications. "
-            "The backend uses the Resend SDK with the API key configured in environment variables."
+            "ExamScanify Scanner: Answer key requirement. "
+            "If a scanned exam has no answer key set, the app shows a NoAnswerKeyModal instead of the result. "
+            "The teacher must set the answer key in the Exams tab before scanning results are processed. "
+            "Answer keys are AES-encrypted before being stored locally in SQLite."
         ),
-        "metadata": {"category": "backend", "title": "Resend Email Service"},
+        "metadata": {"category": "mobile-app", "title": "Scanner: Answer Key Requirement"},
     },
     {
         "content": (
-            "Google Play purchase verification in ExamScanify backend: "
-            "Uses the Google Play Developer API via a dedicated service account. "
-            "When a teacher purchases the Premium Pass through the Android app, "
-            "the backend verifies the purchase token with Google Play "
-            "and updates the user's premium status in Supabase."
+            "ExamScanify Scanner: Brightness overlay. "
+            "The scanner displays a brightness indicator updated at most once per second from the Vue WebView. "
+            "This helps teachers know if the lighting conditions are sufficient for accurate scanning. "
+            "Low brightness warnings guide the user to improve scan conditions."
         ),
-        "metadata": {"category": "backend", "title": "Google Play Purchase Verification"},
+        "metadata": {"category": "mobile-app", "title": "Scanner: Brightness Overlay"},
     },
     {
         "content": (
-            "ExamScanify backend CORS policy: Allowed origins include *.examscanify.com, "
-            "https://examscanify.com, localhost (all ports), capacitor://, ionic://, file://. "
-            "This allows the Android app (Capacitor), web console, and landing page "
-            "to all call the API securely."
+            "ExamScanify Exams Tab. "
+            "Displays a searchable list of all created exams. "
+            "Search by exam name, subject, or exam ID. "
+            "Each exam card shows: exam name, subject, item count, type (Classic/MDAT), sheet type. "
+            "Actions: Create Exam (FAB button), view details, edit, delete, set answer key, view student results. "
+            "Bulk delete: long-press to enter selection mode; select multiple exams and delete at once. "
+            "Item count must be between 1 and 60."
         ),
-        "metadata": {"category": "backend", "title": "Backend CORS Policy"},
+        "metadata": {"category": "mobile-app", "title": "Exams Tab"},
     },
     {
         "content": (
-            "Delta sync in ExamScanify backend: The GET /api/exams endpoint supports a `since` query parameter "
-            "(Unix timestamp in ms). It returns only exams updated after that timestamp. "
-            "This reduces data transfer on subsequent syncs — the app only downloads changed records, "
-            "not the entire dataset."
+            "ExamScanify Exams Tab: Sheet types. "
+            "Each exam can have a 'lite' or 'standard' sheet type. "
+            "'lite' — the default sheet type for most exams. "
+            "'standard' — an alternate sheet format (scanner-form-b). "
+            "The sheet type determines which scanner route is loaded in the Vue WebView. "
+            "Sheet type is set during exam creation or editing."
         ),
-        "metadata": {"category": "backend", "title": "Delta Sync Optimization"},
+        "metadata": {"category": "mobile-app", "title": "Exams Tab: Sheet Types (Lite vs Standard)"},
     },
     {
         "content": (
-            "The ExamScanify Ambassador Program: Teachers can apply to become ExamScanify ambassadors. "
-            "The backend sends ambassador invitation emails via Resend. "
-            "Ambassador routes: POST /api/ambassadors/apply, GET /api/ambassadors. "
-            "Ambassador data is stored in Supabase."
+            "ExamScanify Classes Tab. "
+            "Teachers create and manage class sections. "
+            "Each class has: section name and grade level. "
+            "Tap a class card to open its student list. "
+            "Student management: add, edit, delete students per class. "
+            "Each student has a unique student code used for auto-detection during scanning. "
+            "Supports bulk class deletion via long-press selection mode. "
+            "Classes sync to Supabase cloud storage."
         ),
-        "metadata": {"category": "backend", "title": "Ambassador Program"},
+        "metadata": {"category": "mobile-app", "title": "Classes Tab"},
     },
     {
         "content": (
-            "ExamScanify cron job: GET /api/cron/cleanup-syncs runs periodically (scheduled by Vercel). "
-            "It cleans up expired web sync PINs — deletes the Cloudinary file and removes the Supabase row "
-            "for any PIN older than 5 minutes. The cron endpoint is protected by a CRON_SECRET bearer token."
+            "ExamScanify AI Exam Generator (Creator Tab). "
+            "Inputs: Subject (from list or custom), Topic (select from list / type manually / upload document), "
+            "Item count (10, 20, 30, 40, or 50 items), Exam format (MDAT or Classic HOTS). "
+            "Cost system: Generation costs Credits — cost scales with item count and topic length. "
+            "New users receive a welcome bonus of Credits on first use. "
+            "Credits balance shown as a floating badge (top-right). "
+            "The generator calls the ExamScanify backend API with a Supabase JWT auth token."
         ),
-        "metadata": {"category": "backend", "title": "Cron Cleanup Job"},
+        "metadata": {"category": "mobile-app", "title": "AI Exam Generator Tab (Creator)"},
+    },
+    {
+        "content": (
+            "ExamScanify AI Credits system. "
+            "Credits are the in-app currency for AI Exam Generation. "
+            "Credits are consumed per generation; cost is based on item count and topic length surcharges. "
+            "Credits can be purchased in the Credits Store (in-app). "
+            "A welcome bonus is granted to new users on first use of the AI generator. "
+            "Premium users and free users both use Credits for AI generation — Credits are separate from Premium status."
+        ),
+        "metadata": {"category": "mobile-app", "title": "AI Credits System"},
+    },
+    {
+        "content": (
+            "ExamScanify AI Generation flow (Creator Tab): "
+            "1. Teacher selects subject, topic, item count, and exam format. "
+            "2. App calls backend API (Gemini AI) with Supabase JWT token. "
+            "3. AI returns: exam title, questions, answer choices with point values. "
+            "4. Choices are shuffled (Fisher-Yates) and re-labeled (a/b/c/d). "
+            "5. Answer key is built automatically from the AI response. "
+            "6. Exam is saved to local SQLite database. "
+            "7. Teacher is redirected to the Exams tab to view the generated exam items."
+        ),
+        "metadata": {"category": "mobile-app", "title": "AI Generation Flow"},
+    },
+    {
+        "content": (
+            "ExamScanify MDAT vs Classic HOTS exam formats: "
+            "MDAT (Modified Difficulty-Adjusted Test): "
+            "Each answer choice (A, B, C, D) has a different point value. Rubric-based scoring. "
+            "Stored as a weights map: {1: {'A': 3, 'B': 2, 'C': 1, 'D': 0}}. "
+            "This is the standard format used in DepEd assessments. "
+            "Classic HOTS: Only one correct answer per item. Each correct answer = 1 point. "
+            "Stored as: {1: 'A', 2: 'C', ...}."
+        ),
+        "metadata": {"category": "mobile-app", "title": "MDAT vs Classic HOTS Exam Formats"},
+    },
+    {
+        "content": (
+            "ExamScanify Account Tab: Membership Status section. "
+            "Displays whether the user has a Free Account or Premium Pass (Active). "
+            "Premium users see: 'Premium Pass Active', expiry date (e.g., 'Valid until: July 20, 2027'), gold gradient card. "
+            "Free users see: upgrade CTA with 'Remove all ads and get an uninterrupted scanning experience today.' "
+            "Tapping the card for free users opens the ScannerStore for upgrading."
+        ),
+        "metadata": {"category": "mobile-app", "title": "Account Tab: Membership Status"},
+    },
+    {
+        "content": (
+            "ExamScanify Account Tab sections and settings: "
+            "Account Settings: Credits Store, Privacy & Security, Terms & Conditions. "
+            "Data Management: Web Console (opens WebConsoleModal), Clean Up Scanned Photos. "
+            "Support & Info: Help Center, Ask Scanify AI Agent (BETA chatbot), Submit a Ticket, Rate the App (Google Play), Visit Website, How to Use (Tutorial), App Version. "
+            "Danger Zone: Delete Account (wipes all data). "
+            "Session: Sign Out."
+        ),
+        "metadata": {"category": "mobile-app", "title": "Account Tab: All Settings"},
+    },
+    {
+        "content": (
+            "ExamScanify Account Tab: AI Agent (Ask Scanify AI Agent). "
+            "A BETA feature accessible from the Account tab under Support & Info. "
+            "Opens AiAgentModal — a streaming AI chatbot powered by the ExamScanify RAG microservice. "
+            "The chatbot can answer questions about ExamScanify features, usage, pricing, and scanning. "
+            "Supports markdown rendering in responses. "
+            "Uses SSE (Server-Sent Events) for streaming responses."
+        ),
+        "metadata": {"category": "mobile-app", "title": "Account Tab: Ask Scanify AI Agent (BETA)"},
+    },
+    {
+        "content": (
+            "ExamScanify authentication: "
+            "Uses Supabase for Google OAuth login. "
+            "Teachers sign in with their Google account via supabase.auth.signInWithOAuth (provider: 'google'). "
+            "Auth state is managed by UserContext throughout the app. "
+            "On logout: Google sign-out, Supabase sign-out, AsyncStorage cleared (userData, userToken, googleIdToken, EXAMS_LIST). "
+            "Before sign-out, data is automatically synced to cloud to prevent data loss."
+        ),
+        "metadata": {"category": "mobile-app", "title": "Authentication & Sign-Out Flow"},
+    },
+    {
+        "content": (
+            "ExamScanify local database: "
+            "Uses expo-sqlite (SQLite) stored on-device. "
+            "Database name: exams_{userId}.db (sanitized UID). "
+            "Tables: exams, students, classes, assessments, exam_results. "
+            "On account deletion: database is closed, deleted from device, and all scan photos are also deleted. "
+            "Answer keys are AES-encrypted before being stored in the exams table."
+        ),
+        "metadata": {"category": "mobile-app", "title": "Local Database (SQLite)"},
+    },
+    {
+        "content": (
+            "ExamScanify cloud sync from mobile: "
+            "syncService.syncData(userId) pushes SQLite data to Supabase. "
+            "Collections synced: classes, students, exams, exam_results, assessments. "
+            "Sync happens automatically on app open and optionally on sign-out. "
+            "Last sync time is stored and displayed in the Account tab. "
+            "Requires internet connection. Sync errors are shown as toast notifications."
+        ),
+        "metadata": {"category": "mobile-app", "title": "Cloud Sync from Mobile App"},
+    },
+    {
+        "content": (
+            "ExamScanify Web Console Modal (in-app). "
+            "Accessible from Account > Data Management > Web Console. "
+            "Opens a WebConsoleModal inside the app. "
+            "Allows teachers to access the web console features without leaving the app. "
+            "Full web console is also available at console.examscanify.com on desktop."
+        ),
+        "metadata": {"category": "mobile-app", "title": "Web Console Modal (In-App)"},
+    },
+    {
+        "content": (
+            "ExamScanify Tutorial system. "
+            "First-time users are shown a TutorialModal on the Scanner tab. "
+            "After tutorial completion, QuickTips are shown once per session. "
+            "Tutorial can be replayed from Account > Support > How to Use. "
+            "Tutorial completion state is stored in AsyncStorage under TUTORIAL_STORAGE_KEY."
+        ),
+        "metadata": {"category": "mobile-app", "title": "Tutorial & Quick Tips"},
+    },
+    {
+        "content": (
+            "ExamScanify app version and technical details: "
+            "Framework: React Native with Expo (Expo Router). "
+            "Platform: Android (primary). "
+            "Package name: com.driftapps.scanify. "
+            "Scanner engine: Vue.js app compiled to Android assets, using OpenCV.js for computer vision. "
+            "State management: React Context (UserContext, TutorialContext). "
+            "App version is displayed in Account tab under Support & Info."
+        ),
+        "metadata": {"category": "mobile-app", "title": "App Technical Details"},
+    },
+
+    # ─────────────────────────────────────────────
+    # BACKEND
+    # ─────────────────────────────────────────────
+    {
+        "content": (
+            "ExamScanify backend tech stack: "
+            "Node.js server running on port 3001. "
+            "Backend API base URL: https://api.examscanify.com. "
+            "Primary database: Supabase (PostgreSQL). "
+            "Image storage: Cloudinary. "
+            "AI generation: Google Gemini API. "
+            "Email service: Resend API. "
+            "Auth: Supabase (Google OAuth). "
+            "Purchase verification: Google Play Developer API. "
+            "Legacy: Firebase (service account for firebase-adminsdk)."
+        ),
+        "metadata": {"category": "backend", "title": "Backend Tech Stack"},
+    },
+    {
+        "content": (
+            "ExamScanify Supabase configuration: "
+            "Project URL: https://jojkggayoiqrwzhmudxt.supabase.co. "
+            "Primary database and authentication provider. "
+            "Supabase tables used: users, classes, students, exams, exam_results, assessments, web_sync_pins. "
+            "Row-level security (RLS) enforced on all tables. "
+            "JWT tokens from Supabase are used to authenticate all backend API calls. "
+            "premiumExpiry stored in users table as Unix timestamp."
+        ),
+        "metadata": {"category": "backend", "title": "Supabase Database & Auth"},
+    },
+    {
+        "content": (
+            "ExamScanify backend: Cloud Sync API. "
+            "Endpoint: POST /api/sync/:pin/consume. "
+            "Requires Supabase JWT bearer token in Authorization header. "
+            "The endpoint validates the 6-character PIN against the web_sync_pins table, "
+            "verifies the PIN belongs to the authenticated user, "
+            "returns the encrypted+zipped backup file (binary), "
+            "and deletes the PIN atomically after consumption (one-time use). "
+            "Response: binary .zip file containing backup.dat (AES-encrypted JSON)."
+        ),
+        "metadata": {"category": "backend", "title": "Backend: Cloud Sync API Endpoint"},
+    },
+    {
+        "content": (
+            "ExamScanify PIN-based sync mechanism: "
+            "The teacher generates a 6-character alphanumeric PIN from the mobile app. "
+            "The PIN is stored in Supabase table web_sync_pins with the userId. "
+            "The web console prompts for this PIN, validates it against the authenticated user's account, "
+            "calls the /api/sync/:pin/consume endpoint to atomically fetch-and-delete the data. "
+            "This prevents replay attacks — each PIN can only be consumed once."
+        ),
+        "metadata": {"category": "backend", "title": "Backend: PIN-Based Sync Flow"},
+    },
+    {
+        "content": (
+            "ExamScanify data encryption for sync: "
+            "Data is AES-256 encrypted using CryptoJS before transmission. "
+            "Encryption key: NEXT_PUBLIC_SYNC_SECRET_KEY (first 32 characters). "
+            "IV: NEXT_PUBLIC_SYNC_IV (16-character string). "
+            "Encrypted data is then zipped (JSZip) into a .zip file containing backup.dat. "
+            "Decryption on web console: unzip → decrypt with same key/IV → parse JSON."
+        ),
+        "metadata": {"category": "backend", "title": "Backend: AES Encryption & Zip"},
+    },
+    {
+        "content": (
+            "ExamScanify Cloudinary integration: "
+            "Used for storing scanned exam images uploaded from the mobile app. "
+            "Cloudinary cloud name: dhj7xszkh. "
+            "Images are uploaded after successful scans for cloud backup. "
+            "The Clean Up Scanned Photos feature (Account tab) removes locally stored scan images from the device."
+        ),
+        "metadata": {"category": "backend", "title": "Backend: Cloudinary Image Storage"},
+    },
+    {
+        "content": (
+            "ExamScanify Google Play purchase verification: "
+            "A dedicated Google Play Developer service account is used to verify in-app purchases. "
+            "Service account email: google-play-android-developer@exam-scanify.iam.gserviceaccount.com. "
+            "Google Play package name: com.driftapps.scanify. "
+            "Premium Pass purchases are verified server-side using the Google Play Developer API. "
+            "On successful verification, premiumExpiry is updated in the Supabase users table."
+        ),
+        "metadata": {"category": "backend", "title": "Backend: Google Play Purchase Verification"},
+    },
+    {
+        "content": (
+            "ExamScanify Gemini AI integration: "
+            "Backend uses Google Gemini API (GEMINI_API_KEY) for AI Exam Generation. "
+            "The mobile app calls the backend with a Supabase JWT token; the backend calls Gemini. "
+            "Gemini generates MDAT or Classic HOTS exam questions, choices, and point values. "
+            "Token usage (promptTokenCount, candidatesTokenCount, totalTokenCount) is logged for cost analysis. "
+            "The backend enforces credit deduction before calling Gemini."
+        ),
+        "metadata": {"category": "backend", "title": "Backend: Gemini AI Exam Generation"},
+    },
+    {
+        "content": (
+            "ExamScanify Resend email service: "
+            "RESEND_API_KEY is configured on the backend. "
+            "Used for sending transactional emails such as ambassador activation links and notifications. "
+            "Email sender domain: examscanify.com."
+        ),
+        "metadata": {"category": "backend", "title": "Backend: Resend Email Service"},
+    },
+    {
+        "content": (
+            "ExamScanify backend CRON jobs: "
+            "Scheduled tasks are secured with CRON_SECRET (value: 3x4mSc4n1fy_Cr0n_S3cr3t_2026). "
+            "CRON jobs handle scheduled cleanup and maintenance tasks (e.g., expired PIN cleanup, data housekeeping)."
+        ),
+        "metadata": {"category": "backend", "title": "Backend: CRON Jobs"},
+    },
+    {
+        "content": (
+            "ExamScanify Premium status check: "
+            "Premium expiry is stored in Supabase users table as premiumExpiry (Unix timestamp in milliseconds). "
+            "The mobile app checks: expiry > Date.now() to determine if premium is active. "
+            "The web console checks: expiry > Date.now() on login. "
+            "Premium status controls: ad removal, realtime cloud sync access, no scanning limit. "
+            "Purchase is one-time annual — does not auto-renew."
+        ),
+        "metadata": {"category": "backend", "title": "Backend: Premium Status & Expiry Logic"},
+    },
+    {
+        "content": (
+            "ExamScanify Firebase integration (legacy): "
+            "Firebase service account (project: exam-scanify) is configured on the backend. "
+            "Firebase project ID: exam-scanify. "
+            "Firebase Admin SDK service account: firebase-adminsdk-fbsvc@exam-scanify.iam.gserviceaccount.com. "
+            "Firebase is used for legacy features; Supabase is the primary auth and database."
+        ),
+        "metadata": {"category": "backend", "title": "Backend: Firebase (Legacy)"},
+    },
+    {
+        "content": (
+            "ExamScanify RAG microservice (AI Agent backend): "
+            "A separate FastAPI Python microservice powers the Ask Scanify AI Agent chatbot. "
+            "Deployed on Render. "
+            "Architecture: LangGraph-based RAG pipeline. "
+            "Vector store: FAISS for knowledge retrieval. "
+            "LLM: Groq (fast inference). "
+            "Embeddings: HuggingFace sentence transformers. "
+            "Knowledge base: curated chunks in chunks.py (this file). "
+            "Supports SSE streaming for real-time response delivery. "
+            "Rate limiting: Redis-backed, 20 requests per session."
+        ),
+        "metadata": {"category": "backend", "title": "RAG Microservice (AI Agent Backend)"},
+    },
+    {
+        "content": (
+            "ExamScanify RAG microservice app structure: "
+            "app/knowledge/chunks.py — static knowledge base (this file). "
+            "app/retriever/ — FAISS vector store retrieval logic. "
+            "app/graph/ — LangGraph pipeline definition. "
+            "app/memory/ — conversation memory management. "
+            "app/routers/ — FastAPI route handlers. "
+            "app/config.py — configuration and environment variables."
+        ),
+        "metadata": {"category": "backend", "title": "RAG Microservice Structure"},
     },
 
     # ─────────────────────────────────────────────
@@ -452,53 +762,139 @@ KNOWLEDGE_CHUNKS = [
     # ─────────────────────────────────────────────
     {
         "content": (
-            "The ExamScanify Web Console is accessible at https://console.examscanify.com. "
-            "It is the browser-based companion to the Android app. "
-            "Teachers can log in with the same credentials as the mobile app "
-            "and access all their synced data from any computer or tablet."
+            "ExamScanify Web Console overview: "
+            "Available at https://console.examscanify.com. "
+            "A Next.js web application where teachers log in to manage classes, review exam records, "
+            "and export comprehensive performance analytics — all in one place. "
+            "Requires Google login via Supabase OAuth. "
+            "Synced data is loaded from mobile app either via 6-character PIN or cloud auto-fetch (Premium)."
         ),
         "metadata": {"category": "web-console", "title": "Web Console Overview"},
     },
     {
         "content": (
-            "Web Console features: "
-            "1) View all students and their scores across all exams. "
-            "2) Browse all created exams with detailed item analysis. "
-            "3) View analytics dashboards (class averages, score distributions). "
-            "4) Sync data from mobile app using the 6-character PIN code. "
-            "5) Export data as Excel files. "
-            "6) Manage account and subscription status."
+            "ExamScanify Web Console authentication: "
+            "Teachers sign in with Google via Supabase OAuth. "
+            "Login calls supabase.auth.signInWithOAuth(provider: 'google'). "
+            "After login, redirected to /auth/callback?next=/console. "
+            "Session state is managed with supabase.auth.onAuthStateChange(). "
+            "Auth loading state shown with a spinner while session is verified."
         ),
-        "metadata": {"category": "web-console", "title": "Web Console Features"},
+        "metadata": {"category": "web-console", "title": "Web Console: Google Auth"},
     },
     {
         "content": (
-            "Web Console sync process: "
-            "1) Teacher opens ExamScanify mobile app and taps 'Sync to Web'. "
-            "2) App uploads backup to cloud and displays a 6-character PIN (e.g., 'XK7P2M'). "
-            "3) Teacher goes to console.examscanify.com and enters the PIN. "
-            "4) Console downloads and imports the data automatically. "
-            "5) PIN expires in 5 minutes and the file is deleted immediately after download."
+            "ExamScanify Web Console Sync Method 1: PIN-based sync. "
+            "Teacher generates a 6-character PIN from the mobile app (Account > Web Console). "
+            "On the web console, teacher enters the PIN in the SyncLogin or SyncModal. "
+            "The web console calls POST /api/sync/:pin/consume with the Supabase JWT token. "
+            "Response: binary zip → unzip → AES-decrypt → parse JSON → load dashboard. "
+            "PIN is single-use and deleted atomically after consumption."
         ),
-        "metadata": {"category": "web-console", "title": "Web Console Sync Process"},
+        "metadata": {"category": "web-console", "title": "Web Console: Sync via PIN"},
     },
     {
         "content": (
-            "The ExamScanify Web Console is built with Next.js 16 and hosted on Netlify. "
-            "It is part of the examscanify-landing repository at the /app path. "
-            "The console uses Supabase for authentication and data access, "
-            "Dexie.js for client-side caching, and the ExamScanify backend API for sync operations."
+            "ExamScanify Web Console Sync Method 2: Cloud auto-fetch (all users). "
+            "On login, the web console automatically fetches data from Supabase for all users. "
+            "Fetches from collections: classes, students, exams, exam_results, assessments. "
+            "Data is filtered by userId. "
+            "Exam fields are mapped: exam_name = exam_title, type = topic, item_count = itemCount, mdat_items = items. "
+            "Premium users get realtime sync; free users also get auto-fetch on login."
         ),
-        "metadata": {"category": "web-console", "title": "Web Console Technical Stack"},
+        "metadata": {"category": "web-console", "title": "Web Console: Cloud Auto-Fetch"},
     },
     {
         "content": (
-            "ExamScanify is developed by Drift Apps, a Philippine-based mobile app development studio. "
-            "Contact: support@examscanify.com. "
-            "Developer website: https://drift-apps.netlify.app/. "
-            "The app domain is https://examscanify.com. "
-            "The admin/developer contact is founder@driftapps.xyz."
+            "ExamScanify Web Console data persistence: "
+            "Synced data is saved to localStorage with user UID as key: "
+            "examscanify_synced_data, examscanify_last_sync, examscanify_sync_uid. "
+            "On page reload, data is loaded from localStorage if the UID matches the current session. "
+            "Data from a different user session is cleared automatically to prevent cross-account data leakage. "
+            "Data is also saved to Dexie (IndexedDB) via dataService.saveBulkData() for offline access."
         ),
-        "metadata": {"category": "landing", "title": "Developer and Contact Info"},
+        "metadata": {"category": "web-console", "title": "Web Console: Data Persistence"},
+    },
+    {
+        "content": (
+            "ExamScanify Web Console data staleness: "
+            "Synced data is checked for staleness every 30 seconds. "
+            "Data is marked stale if more than 30 minutes have passed since last sync. "
+            "A visual stale indicator is shown in the dashboard when data is stale. "
+            "Teachers can trigger a manual re-sync via the SyncModal (new sync button)."
+        ),
+        "metadata": {"category": "web-console", "title": "Web Console: Staleness Indicator"},
+    },
+    {
+        "content": (
+            "ExamScanify Web Console Dashboard views: "
+            "The dashboard shows synced data in two tabs: "
+            "1. Classes tab — shows all class sections with their enrolled students. "
+            "2. Exams tab — shows all exams with result summaries. "
+            "Header shows: user avatar, email, premium badge (if applicable), isSyncing spinner, and new sync button. "
+            "Footer included at the bottom of the dashboard."
+        ),
+        "metadata": {"category": "web-console", "title": "Web Console: Dashboard Tabs"},
+    },
+    {
+        "content": (
+            "ExamScanify Web Console: Classes & Students view. "
+            "Displays all class sections synced from the mobile app. "
+            "Each class shows the section name, grade level, and enrolled student count. "
+            "Expand a class to see the full student roster with student names and codes."
+        ),
+        "metadata": {"category": "web-console", "title": "Web Console: Classes & Students"},
+    },
+    {
+        "content": (
+            "ExamScanify Web Console: Exams & Results view. "
+            "Lists all exams with: exam name, subject, item count, type (Classic/MDAT). "
+            "Expand an exam to see per-student scores. "
+            "Exam Scores view shows: student name, score, percentage, and scanned answers per student. "
+            "Overall Summary: aggregated score statistics across all students. "
+            "Performance by Class: compares average scores across different class sections."
+        ),
+        "metadata": {"category": "web-console", "title": "Web Console: Exams, Scores & Summary"},
+    },
+    {
+        "content": (
+            "ExamScanify Web Console: Item Analysis view. "
+            "Shows per-question answer distribution for each exam. "
+            "For each item: displays how many students chose each answer option (A, B, C, D). "
+            "Distractor analysis: identifies which wrong answers are most commonly selected. "
+            "Helps teachers understand class-wide misconceptions and adjust instruction."
+        ),
+        "metadata": {"category": "web-console", "title": "Web Console: Item Analysis"},
+    },
+    {
+        "content": (
+            "ExamScanify Web Console: Download Answer Sheets. "
+            "Teachers can generate and download printable answer sheets directly from the web console. "
+            "Answer sheets are pre-filled with student names, class codes, and unique student IDs. "
+            "Layout: 6 students per page. "
+            "The downloaded sheets can be printed and distributed to students before an exam."
+        ),
+        "metadata": {"category": "web-console", "title": "Web Console: Download Answer Sheets"},
+    },
+    {
+        "content": (
+            "ExamScanify Web Console auto-slider (landing page section): "
+            "The landing page at examscanify.com includes an interactive Web Console demo section. "
+            "It shows 8 rotating screenshot sections with a sidebar nav: "
+            "Classes & Students, Students List, Exams & Results, Exam Scores, Overall Summary, "
+            "Performance by Class, Item Analysis, Download Answer Sheets. "
+            "Screenshots auto-advance every 3 seconds; clicking a nav item pauses auto-advance. "
+            "Displayed in a macOS-style browser window mockup at console.examscanify.com."
+        ),
+        "metadata": {"category": "web-console", "title": "Web Console Demo (Landing Page)"},
+    },
+    {
+        "content": (
+            "ExamScanify Web Console: Dexie IndexedDB integration. "
+            "After syncing, all data is also persisted to Dexie (IndexedDB) via dataService.saveBulkData(userId, results). "
+            "This enables offline access to synced data in the browser without re-fetching. "
+            "The scanner WebView in-app can also access this Dexie data for cross-feature consistency."
+        ),
+        "metadata": {"category": "web-console", "title": "Web Console: Dexie IndexedDB"},
     },
 ]
