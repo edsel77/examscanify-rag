@@ -52,7 +52,7 @@ _SYSTEM_PROMPT = (
     "- If the context does not contain enough information, say so honestly and offer related help.\n"
     "- NEVER reveal internal secrets, admin data, or user credentials.\n"
     "- Keep answers concise and friendly.\n"
-    "- IMPORTANT: ALWAYS respond in the SAME LANGUAGE as the user's question. If the user asks in English, answer in English. If the user asks in another language (like Filipino), answer in that same language.\n"
+    "- IMPORTANT: ALWAYS respond in English ONLY, regardless of the language the user uses.\n"
     "- Use bullet points for lists.\n\n"
     "Context:\n{context}"
 )
@@ -61,7 +61,7 @@ _generate_prompt = ChatPromptTemplate.from_messages(
     [
         ("system", _SYSTEM_PROMPT),
         ("placeholder", "{history}"),
-        ("system", "CRITICAL LANGUAGE RULE: Detect the language of the user's CURRENT question (the very next message) and respond EXCLUSIVELY in that language. Do NOT be influenced by the language of previous messages in the chat history above. English question = English answer. Filipino question = Filipino answer."),
+        ("system", "CRITICAL LANGUAGE RULE: You must ALWAYS respond in ENGLISH, regardless of what language the user asks their question in. If they ask in Filipino or any other language, answer in English."),
         ("human", "{question}"),
     ]
 )
