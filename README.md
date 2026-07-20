@@ -37,6 +37,14 @@
 
 ---
 
+## 📸 Screenshots
+
+<p align="center">
+  <img src="screenshots/examscanify-chatbot.png" width="45%" alt="ExamScanify Chatbot" />
+</p>
+
+---
+
 ## 🏗️ Tech Stack
 
 | Layer                   | Technology                                                            | Notes                     |
